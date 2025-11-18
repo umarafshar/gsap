@@ -15,6 +15,7 @@ ________________________________________________________________________________
 | 06 | The Up Group Awwwards                        | `/06-up-group-awwwards/`                     | `06-up-group-awwwards`                       |
 | 07 | Kodex By Sheryians                           | `/07-kodex-sheryians/`                       | `07-kodex-sheryians`                         |
 | 08 | Gethyped Awwwards                            | `/08-gethyped-awwwards/`                     | `08-gethyped-awwwards`                       |
+| 09 | Ryu Scroll Animation                         | `/09-ryu-scroll-animation/`                  | `09-ryu-scroll-animation`                       |
 
 ___________________________________________________________________________________________________________________________________________________
 
