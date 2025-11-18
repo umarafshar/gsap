@@ -1,0 +1,148 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+html, body {
+height: 100%;
+width: 100%;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+background: #0F0F0F;
+}
+
+img {
+max-width: 100%;
+height: auto;
+}
+a {
+text-decoration: none;
+color: inherit;
+}
+ul, ol {
+list-style: none;
+}
+button {
+cursor: pointer;
+border: none;
+outline: none;
+}
+input {
+outline: none;
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: 300;
+}
+
+h2 {
+    font-size: 7rem;
+    font-weight: 700;
+    color: transparent;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    background: radial-gradient(white, black);
+    background-clip: text;
+    text-align: center;
+    line-height: 1em;
+
+    & span{
+        font-style: italic;
+        font-weight: 300;
+        text-transform: lowercase;
+        letter-spacing: -0.06em;
+    }
+}
+
+
+.section2 {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Header Section */
+.header__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 100px;
+    color: #fff;
+}
+
+.header__logo svg {
+    width: 150px;
+    fill: #fff;
+}
+
+.header__nav ul {
+    display: flex;
+    gap: 30px;
+}
+
+.hero__container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 5rem 10rem;
+    height: calc(100vh - 80px);
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    gap: 20px;
+}
+
+.hero__description {
+    color: #878787;
+    margin-top: 1rem;
+}
+
+.hero__cta {
+    margin-top: 2.5rem;
+    display: inline-block;
+    border: 1px solid #fff;
+    padding: 10px 20px;
+    border-radius: 30px;
+}
+
+.hero__img img, .hero__video{
+    position: absolute;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 1px solid #3a3a3a;
+    box-shadow: 0 5px 20px rgba(49, 49, 49, 0.2);
+}
+
+.hero__img-01 {
+    bottom: 38%;
+    left: 12%;
+    width: 350px;
+    z-index: 10;
+}
+
+.hero__img-02 {
+    bottom: 5%;
+    left: 19%;
+    width: 170px;
+    z-index: 10;
+}
+
+.hero__img-03 {
+    top: 25%;
+    right: 15%;
+    width: 250px;
+    height: 350px;
+    z-index: 10;
+}
+
+.hero__video {
+    bottom: 5%;
+    left: 30%;
+    width: 650px;
+    z-index: 10;
+    /* transform: translate(-50%, -50%); */
+    
+}
+
