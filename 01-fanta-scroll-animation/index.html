@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
+    <link href="styles.css" rel="stylesheet">
+    <title>Fanta Piyo Khul kr Geo</title>
+</head>
+
+<body>
+    <header class="header">
+        <nav>
+            <img src="Assets/coke-logo.svg"></img>
+            <div class="nav-links">
+                <a href="#">Home</a>
+                <a href="#">Products</a>
+                <a href="#">Shop</a>
+                <a href="#">Contact</a>
+            </div>
+            <i class="ri-menu-3-line"></i>
+        </nav>
+    </header>
+    <section class="main">
+        <div class="hero">
+            <h1>Fanta</h1>
+
+            <model-viewer 
+                class="hero__3d-bird"
+                alt="Orange 3d Bird" 
+                src="Assets/bird_orange.glb"
+                autoplay
+                camera-controls 
+                disable-zoom
+                auto-rotate
+                shadow-intensity="0"
+                exposure="1.2">
+            </model-viewer>
+
+            <model-viewer 
+                class="hero__3d-model"
+                alt="Fanta Can 3D Model" 
+                src="Assets/fanta_can.glb"
+                autoplay
+                camera-controls 
+                disable-zoom
+                auto-rotate
+                shadow-intensity="0"
+                exposure="1.2">
+            </model-viewer>
+
+            <!-- <img class="fanta1" src="/Proj 2 - GSAP Scroll Animation - Fanta/Assets/fanta.png" alt=""> -->
+
+            <img class="orange1" src="Assets/orange.webp" alt="">
+
+            <img class="orange2" src="Assets/orange2.webp" alt="">
+
+            <img class="leaf1" src="Assets/leaf.webp" alt="">
+
+            <img class="leaf2" src="leaf2.webp" alt="">
+
+            <img class="leaf3" src="Assets/leaf3.webp" alt="">
+
+            <p>Designed by Umar Khalid</p>
+        </div>
+
+        <div class="about">
+            <div class="about-left">
+                <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                    <path fill="#ff7900"
+                        d="M16.1,-22.6C20,-15.9,21.6,-10,21.1,-5C20.5,0.1,17.6,4.3,14.7,7.5C11.7,10.7,8.5,12.8,4.5,15.6C0.5,18.4,-4.3,21.8,-15,25C-25.7,28.2,-42.2,31,-56.4,24.1C-70.5,17.1,-82.3,0.2,-76.1,-9.7C-69.9,-19.6,-45.6,-22.5,-29.9,-27.1C-14.3,-31.7,-7.1,-37.9,-0.5,-37.3C6.1,-36.7,12.2,-29.3,16.1,-22.6Z"
+                        transform="translate(100 100)" />
+                </svg>
+            </div>
+            <div class="about-right">
+                <h2>About Fanta</h2>
+                <p>Fanta is a brand of fruit-flavored carbonated soft drinks created by The Coca-Cola Company. The
+                    original Fanta drink was created in Germany in 1940, as a result of difficulties importing Coca-Cola
+
+            </div>
+        </div>
+
+        <div class="products">
+
+            <div class="card">
+                <img class="lemon1" src="Assets/lemon.webp" alt="">
+
+                <img class="sprite" src="Assets/sprite.webp" alt="">
+
+                <h3>Sprite</h3>
+                <button>Get it Now</button>
+            </div>
+
+            <div class="card">
+                <h3>Fanta</h3>
+                <button>Get it Now</button>
+            </div>
+
+            <div class="card">
+                <img class="lemon2" src="Assets/lemon.webp" alt="">
+
+                <img class="cocacola" src="Assets/cocacola.webp" alt="">
+
+                <h3>Cocacola</h3>
+
+                <button>Get it Now</button>
+            </div>
+        </div>
+
+    </section>
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
+        integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"
+        integrity="sha512-Ic9xkERjyZ1xgJ5svx3y0u3xrvfT/uPkV99LBwe68xjy/mGtO+4eURHZBW2xW4SZbFrF1Tf090XqB+EVgXnVjw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="script.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js">
+        type = "module" </script>
+
+</body>
+
+</html>
