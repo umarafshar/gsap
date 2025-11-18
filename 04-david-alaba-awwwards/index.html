@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Life of David Alaba</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header with Navigation -->
+    <header class="header">
+        <!-- <div class="header__logo">JD</div> -->
+        <nav class="header__nav">
+            <ul class="nav__list">
+                <li class="nav__item">Home</li>
+                <li class="nav__item">Journey</li>
+                <li class="nav__item">About</li>
+                <li class="nav__item">The David Alaba Foundation</li>
+                <li class="nav__item">Gallery</li>
+                <li class="nav__item">Press</li>
+                <li class="nav__item">Contact</li>
+            </ul>
+        </nav>
+        <hr class="header__divider">
+    </header>
+
+    <main>
+        <!-- Section 1: Hero with Stacked Images -->
+        <section class="hero-section">
+            <div class="hero-section__preloader">
+                <div class="preloader__image-stack">
+                    <!-- Images stacked from bottom to top -->
+                    <img class="preloader__image preloader__image--1"
+                         src="https://cdn.prod.website-files.com/66c5f2b5ceb478c2ef4417a8/66f1cd4643e1c29d218aa558_load-1.webp"
+                         alt="John Doe Portrait 1">
+                    <img class="preloader__image preloader__image--2"
+                         src="https://cdn.prod.website-files.com/66c5f2b5ceb478c2ef4417a8/66c83bbfe6a88981cf47c243_intro-img-1.webp"
+                         alt="John Doe Portrait 2">
+                    <img class="preloader__image preloader__image--3"
+                         src="https://cdn.prod.website-files.com/66c5f2b5ceb478c2ef4417a8/66c83bbf956e0699ad0e3fde_intro-img-2-p-500.webp"
+                         alt="John Doe Portrait 3">
+                    <img class="preloader__image preloader__image--4"
+                         src="https://cdn.prod.website-files.com/66c5f2b5ceb478c2ef4417a8/66c83bc0f0e7e8e65fbe8d46_intro-img-3-p-800.webp"
+                         alt="John Doe Portrait 4">
+                    
+                    <!-- Hero Title -->
+                    <h1 class="preloader__title">d<span class="preloader__title-text">avid alab</span>a</h1>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 2: Video with Blended Text -->
+            <div class="video-section__container">
+                <!-- Background Video -->
+                <video class="video-section__video" muted autoplay loop playsinline>
+                    <source src="https://david-alaba.b-cdn.net/DavidAlaba4.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                
+                <!-- Text Content with Blend Mode -->
+                <div class="video-section__content">
+                    <h2 class="video-section__text">The Life</h2>
+                    <hr class="video-section__divider">
+                    <h2 class="video-section__text">of</h2>
+                    <hr class="video-section__divider">
+                    <h2 class="video-section__text">David Alaba</h2>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- GSAP Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    </script>
+
+    <script src="script.js"></script>
+</body>
+</html>

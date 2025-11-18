@@ -1,0 +1,314 @@
+ @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+ /*   CSS VARIABLES */
+ :root {
+     /* Colors */
+     --color-primary: #000000;
+     --color-secondary: #ffffff;
+     --color-text-light: #ffffff;
+     --color-text-dark: #000000;
+     --color-overlay: rgba(255, 255, 255, 0.94);
+
+     /* Spacing */
+     --spacing-xs: 0.5rem;
+     --spacing-sm: 1rem;
+     --spacing-md: 1.5rem;
+     --spacing-lg: 2rem;
+     --spacing-xl: 4rem;
+     --spacing-2xl: 8rem;
+
+     /* Typography */
+     --font-family-primary: "Montserrat", sans-serif;
+     --font-size-nav: 0.75rem;
+     --font-size-hero: clamp(4rem, 10vw, 6rem);
+     --font-size-section: clamp(3rem, 10vw, 10rem);
+     --font-size-logo: clamp(1.5rem, 3vw, 2rem);
+
+     /* Layout */
+     --header-height: 5vh;
+     --image-width: clamp(250px, 30vw, 300px);
+     --image-height: clamp(375px, 45vw, 450px);
+     --border-radius: 4px;
+
+     /* Transitions */
+     --transition-duration: 0.3s;
+     --transition-ease: ease-in-out;
+ }
+
+ /*  CSS RESET & BOILERPLATE */
+ *,
+ *::before,
+ *::after {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+ }
+
+ html {
+     font-size: 16px;
+     scroll-behavior: smooth;
+     -webkit-font-smoothing: antialiased;
+     -moz-osx-font-smoothing: grayscale;
+ }
+
+ body {
+     min-height: 100vh;
+     width: 100%;
+     font-family: var(--font-family-primary);
+     overflow-x: hidden;
+     background-color: var(--color-secondary);
+ }
+
+ img {
+     max-width: 100%;
+     height: auto;
+     display: block;
+ }
+
+ a {
+     text-decoration: none;
+     color: inherit;
+     transition: opacity var(--transition-duration) var(--transition-ease);
+ }
+
+ a:hover {
+     opacity: 0.7;
+ }
+
+ ul,
+ ol {
+     list-style: none;
+ }
+
+ button {
+     cursor: pointer;
+     border: none;
+     outline: none;
+     background: none;
+     font-family: inherit;
+ }
+
+ input,
+ textarea {
+     outline: none;
+     font-family: inherit;
+ }
+
+ /*  HEADER & NAVIGATION */
+ .header {
+     position: fixed;
+     top: 0;
+     left: 0;
+     width: 100%;
+     z-index: 1000;
+     background-color: transparent;
+ }
+
+
+ .header__nav {
+     width: 100%;
+ }
+
+ .header__divider {
+     width: 100%;
+     height: 1px;
+     background-color: var(--color-text-dark);
+     border: none;
+ }
+
+ .nav__list {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     padding: 0 var(--spacing-md);
+     min-height: var(--header-height);
+     gap: var(--spacing-sm);
+ }
+
+ .nav__item {
+     font-size: var(--font-size-nav);
+     text-transform: uppercase;
+     color: var(--color-text-light);
+     letter-spacing: 1px;
+     cursor: pointer;
+     transition: opacity var(--transition-duration) var(--transition-ease);
+ }
+
+ .nav__item:hover {
+     opacity: 0.7;
+ }
+
+ /* SECTION 1: HERO WITH IMAGE STACK */
+ .hero-section {
+     position: relative;
+     width: 100%;
+     min-height: 100vh;
+     background-color: var(--color-primary);
+     overflow: hidden;
+ }
+
+ .hero-section__preloader {
+     position: relative;
+     width: 100%;
+     height: 100vh;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+
+ .preloader__image-stack {
+     position: relative;
+     width: var(--image-width);
+     height: var(--image-height);
+ }
+
+ .preloader__image {
+     width: 100%;
+     height: 100%;
+     object-fit: cover;
+     object-position: 0% 0%;
+     /* transform-origin: 0% 0%; */
+     border-radius: var(--border-radius);
+     position: absolute;
+     top: 0;
+     left: 0;
+     transition: all 0.2s;
+ }
+
+ .preloader__title {
+     position: absolute;
+     bottom: -12%;
+     left: 50%;
+     transform: translateX(-50%);
+     font-size: var(--font-size-hero);
+     color: var(--color-text-light);
+     white-space: nowrap;
+     font-weight: 700;
+     letter-spacing: 0.05em;
+     opacity: 1;
+ }
+
+ /* SECTION 2: VIDEO TEXT BLEND */
+ .video-section {
+     position: relative;
+     width: 100%;
+     min-height: 100vh;
+     background-color: var(--color-secondary);
+     overflow: hidden;
+ }
+
+ .video-section__container {
+     position: relative;
+     width: 100%;
+     height: 100vh;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+
+ .video-section__video {
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     object-fit: cover;
+     z-index: 1;
+ }
+
+ .video-section__content {
+     position: relative;
+     z-index: 2;
+     width: 100%;
+     height: 100%;
+     background-color: var(--color-overlay);
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     gap: 0;
+     mix-blend-mode: screen;
+ }
+
+ .video-section__text {
+     font-size: var(--font-size-section);
+     color: var(--color-text-dark);
+     font-weight: 700;
+     text-transform: uppercase;
+     letter-spacing: 0.02em;
+     line-height: 0.9;
+     text-align: center;
+     margin: 0;
+     padding: 0;
+ }
+
+ .preloader__title-text {
+     transition: all 1s;
+ }
+
+ .video-section__divider {
+     width: 100%;
+     height: 4px;
+     background-color: var(--color-text-dark);
+     border: none;
+     margin: var(--spacing-md) 0;
+ }
+
+
+ /*   RESPONSIVE DESIGN
+    ==================================== */
+
+ /* Tablets */
+ @media screen and (max-width: 768px) {
+     :root {
+         --font-size-nav: 0.65rem;
+         --spacing-md: 1rem;
+     }
+
+     .nav__list {
+         flex-wrap: wrap;
+         justify-content: center;
+         padding: var(--spacing-xs) var(--spacing-sm);
+         gap: var(--spacing-xs);
+     }
+
+     .nav__item {
+         font-size: 0.65rem;
+     }
+
+     .video-section__divider {
+         margin: var(--spacing-sm) 0;
+     }
+ }
+
+ /* Mobile */
+ @media screen and (max-width: 480px) {
+     :root {
+         --font-size-nav: 0.6rem;
+         --spacing-md: 0.75rem;
+     }
+
+     .nav__list {
+         padding: var(--spacing-xs);
+         gap: 0.25rem;
+     }
+
+     .header__logo {
+         left: var(--spacing-sm);
+     }
+
+     .preloader__title {
+         bottom: -15%;
+     }
+
+     .video-section__divider {
+         margin: var(--spacing-xs) 0;
+     }
+ }
+
+ /* Large Screens */
+ @media screen and (min-width: 1440px) {
+     :root {
+         --font-size-nav: 0.85rem;
+     }
+ }
